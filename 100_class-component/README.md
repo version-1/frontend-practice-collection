@@ -16,6 +16,7 @@ JavaScriptで実装した○×ゲームと同様のゲームをReactで実装し
 #### 1. Reactの公式ドキュメントを読む
 
 主にメインコンセプト部分中心に
+
 [React.js公式](https://ja.reactjs.org/docs/hello-world.html)
 
 ##### 2. 
