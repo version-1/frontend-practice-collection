@@ -4,10 +4,14 @@
 
 各ディレクトリのREADME.mdをみながら同じようなアプリを実装してください。
 
-- 100_class-component Reactの基礎
-- 200_hooks React Hooks API
-- 300_spa SPA
-- 400_redux Redux
+- 100_class-component
+  - Reactの基礎
+- 200_hooks
+  - React Hooks API
+- 300_spa
+  - SPA
+- 400_redux
+  - Redux
 
 ## Prepare 準備
 
