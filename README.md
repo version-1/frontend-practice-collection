@@ -4,6 +4,11 @@
 
 各ディレクトリのREADME.mdをみながら同じようなアプリを実装してください。
 
+- 100_class-component Reactの基礎
+- 200_hooks React Hooks API
+- 300_spa SPA
+- 400_redux Redux
+
 ## Prepare 準備
 
 課題に取り組む前にnode.jsのインストールが必要です。下記記事にしたがってインストールをしてください。
