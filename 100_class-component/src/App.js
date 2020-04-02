@@ -1,16 +1,82 @@
 import React from 'react';
-import { style } from 'styled-components';
+import styled from 'styled-components';
+import GlobalStyle from './GlobalStyle';
+import Board from './components/Board';
 
-const Container = style.div`
-`
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+`;
 
+const Header = styled.div`
+  padding: 16px;
+`;
 
-function App() {
-  return (
-    <Container>
-      <h1>Start</h1>
-    </Container>
-  );
+const Title = styled.h1`
+  text-align: center;
+`;
+
+const Content = styled.div``;
+
+const Footer = styled.div`
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const Button = styled.a`
+  display: inline-block;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 4px 16px;
+`;
+
+const StatusText = styled.div`
+  text-align: center;
+  padding: 8px;
+`;
+
+const initialState = {
+  processing: false,
+  statusText: 'processing',
+  handCount: 0,
+  isCircleTurn: true,
+  board: new Array(9),
+};
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {...initialState};
+  }
+
+  onRestart() {
+    this.setState({...initialState});
+  }
+
+  render() {
+    const {board, statusText} = this.state;
+
+    return (
+      <Container>
+        <Content>
+          <GlobalStyle />
+          <Header>
+            <Title>Tic Tac Toe</Title>
+          </Header>
+          <Board board={board} />
+          <Footer>
+            <StatusText>{statusText}</StatusText>
+            <Button onClick={this.onRestart}>Restart</Button>
+          </Footer>
+        </Content>
+      </Container>
+    );
+  }
 }
-
-export default App;
