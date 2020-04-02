@@ -21,8 +21,8 @@ JavaScriptで実装した○×ゲームと同様のゲームをReactで実装し
 
 主にメインコンセプト部分中心に
 
-[React.js公式](https://ja.reactjs.org/docs/hello-world.html)
-[12 React Best Practices You Need to Follow in 2020](https://www.codeinwp.com/blog/react-best-practices/)
+- [React.js公式](https://ja.reactjs.org/docs/hello-world.html)
+- [12 React Best Practices You Need to Follow in 2020](https://www.codeinwp.com/blog/react-best-practices/)
 
 ##### 2. ○×ゲームを実装
 
