@@ -21,7 +21,7 @@
 
 ## 課題で身に着けること
 
-- Reactの基礎(stateの扱い方、クラスコンポーネント、ライフサイクルメソッド、JSX）
+- Reactの基礎(state/propsの扱い方、クラス/関数コンポーネント、ライフサイクルメソッド、JSX）
 - React Hooks API
 - Reactの基礎
 - SPA(React Router)の実装
