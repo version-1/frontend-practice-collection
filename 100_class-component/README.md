@@ -10,6 +10,7 @@ JavaScriptで実装した○×ゲームと同様のゲームをReactで実装し
 - propsとは？
 - stateとは？
 - children, fragment
+- クラスコンポーネントと関数コンポーネント
 - コンポーネントを作る時に考えること
 - yarnモジュールのインストール（styled-components)
 - CSS in JS(Styled-Component)
