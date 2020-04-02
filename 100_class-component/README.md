@@ -11,6 +11,8 @@ JavaScriptで実装した○×ゲームと同様のゲームをReactで実装し
 - stateとは？
 - children, fragment
 - コンポーネントを作る時に考えること
+- yarnモジュールのインストール（styled-components)
+- CSS in JS(Styled-Component)
 
 ## 課題の進め方
 
@@ -25,5 +27,14 @@ JavaScriptで実装した○×ゲームと同様のゲームをReactで実装し
 
 [js課題](https://github.com/version-1/js-tic-tac-toe)で実装した○×ゲームと同様のものを実装して、
 JavaScriptでの実装とReactでの実装の違いを学ぶ。
+
+###### create-react-appを使ったReactのテンプレートがすでにインストールされているのでこちらを活用する。
+
+`yarn start` とするとReactのアプリを開始することができます。（ブラウザが開いて、Reactの雛形のアプリを確認できます。）
+
+###### styled-component をインストールしてstyled-componentを使ってスタイルする
+
+下記手順を参考にstyled-componentをインストールして使用する。
+[styled-components install](https://styled-components.com/docs/basics#installation)
 
 ##### 3. サイトとして公開
