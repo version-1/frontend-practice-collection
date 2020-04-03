@@ -17,9 +17,17 @@
   - 作成中
 - React+Redux課題 (Github Viewer(仮))
   - 作成中
+
 - Express (Web API CRUD 課題)
   - 作成中
 - ポートフォリオ& 自作アプリ
+
+#### オプショナル
+
+- Webpack ± TypeScript + オブジェクト指向課題
+  - 作成中
+- (bash)シェルスクリプト課題
+  - 作成中
 
 ## 変更履歴
 
