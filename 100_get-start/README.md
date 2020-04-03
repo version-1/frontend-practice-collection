@@ -4,6 +4,8 @@
 
 JavaScriptで実装した○×ゲームと同様のゲームをReactで実装してください。
 
+demo: https://version-1.github.io/react-redux-practice/100-get-start/
+
 ## 課題で身に着けること
 
 - ライフサイクルメソッド
