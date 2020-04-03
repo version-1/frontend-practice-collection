@@ -16,6 +16,9 @@ const Cell = styled.div`
   width: 3rem;
   height: 3rem;
   border-right: 1px solid black;
+  &:hover {
+    cursor: pointer;
+  }
   &:last-child {
     border-right: 0;
   }

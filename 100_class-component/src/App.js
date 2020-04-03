@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GlobalStyle from './GlobalStyle';
 import Board from './components/Board';
+import Turn from './components/Turn';
 
 const Container = styled.div`
   display: flex;
@@ -30,10 +31,16 @@ const Footer = styled.div`
 const Button = styled.a`
   display: inline-block;
   text-align: center;
+  font-weight: bold;
   border: 3px solid black;
   border-radius: 6px;
   font-weight: bold;
   padding: 4px 16px;
+  &:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
 `;
 
 const StatusText = styled.div`
@@ -41,9 +48,22 @@ const StatusText = styled.div`
   padding: 8px;
 `;
 
+const CHAR = Object.freeze({
+  circle: '○',
+  crosse: '×',
+});
+
+const STATUS_TEXT = Object.freeze({
+  processing: 'processing',
+  win: 'win',
+  draw: 'draw',
+});
+
 const initialState = {
+  winner: null,
+  turn: CHAR.circle,
   processing: false,
-  statusText: 'processing',
+  statusText: STATUS_TEXT.processing,
   handCount: 0,
   isCircleTurn: true,
   board: new Array(9),
@@ -61,7 +81,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    const {board, statusText} = this.state;
+    const {turn, board, statusText} = this.state;
 
     return (
       <Container>
@@ -69,6 +89,7 @@ export default class App extends React.Component {
           <GlobalStyle />
           <Header>
             <Title>Tic Tac Toe</Title>
+            <Turn turns={Object.values(CHAR)} turn={turn} />
           </Header>
           <Board board={board} />
           <Footer>
