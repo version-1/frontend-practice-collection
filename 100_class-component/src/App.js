@@ -76,8 +76,22 @@ export default class App extends React.Component {
     this.state = {...initialState};
   }
 
-  onRestart() {
+  onRestart = () => {
     this.setState({...initialState});
+  }
+
+  onClick = (index) => {
+    const { board, handCount, turn } = this.state
+    if (board[index]) {
+      return
+    }
+    const newBoard = [...board]
+    newBoard[index] = turn
+    this.setState({
+      board: newBoard,
+      handCount,
+      turn: turn === CHAR.circle ? CHAR.crosse: CHAR.circle
+    })
   }
 
   render() {
@@ -91,7 +105,7 @@ export default class App extends React.Component {
             <Title>Tic Tac Toe</Title>
             <Turn turns={Object.values(CHAR)} turn={turn} />
           </Header>
-          <Board board={board} />
+          <Board board={board} onClick={this.onClick} />
           <Footer>
             <StatusText>{statusText}</StatusText>
             <Button onClick={this.onRestart}>Restart</Button>

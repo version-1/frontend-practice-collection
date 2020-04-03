@@ -5,7 +5,7 @@ const Container = styled.div`
   border: 1px solid black;
 `;
 
-const Row = styled.div`
+const RowContainer = styled.div`
   display: flex;
   border-bottom: 1px solid black;
   &:last-child {
@@ -15,6 +15,8 @@ const Row = styled.div`
 const Cell = styled.div`
   width: 3rem;
   height: 3rem;
+  font-size: 2rem;
+  text-align: center;
   border-right: 1px solid black;
   &:hover {
     cursor: pointer;
@@ -24,26 +26,26 @@ const Cell = styled.div`
   }
 `;
 
-export default class Board extends React.Component {
-  renderRow = (rowIndex) => {
-    return (
-      <Row>
-        {new Array(2).fill('').map((_, colIndex) => {
-          const index = (3 * (rowIndex - 1)) + colIndex;
-          return <Cell key={index} >{this.props.board[index]}</Cell>;
-        })}
-        <Cell />
-      </Row>
-    );
-  }
+const Row = ({board, index, onClick}) => {
+  return (
+    <RowContainer>
+      {new Array(3).fill('').map((_, colIndex) => {
+        const _index = 3 * (index - 1) + colIndex;
+        const _onClick = () => onClick(_index)
+        return <Cell key={_index} onClick={_onClick}>{board[_index]}</Cell>;
+      })}
+    </RowContainer>
+  );
+};
 
-  render() {
-    return (
-      <Container>
-        {this.renderRow(1)}
-        {this.renderRow(2)}
-        {this.renderRow(3)}
-      </Container>
-    );
-  }
-}
+const Board = ({board, onClick}) => {
+  return (
+    <Container>
+      <Row board={board} index={1} onClick={onClick}/>
+      <Row board={board} index={2} onClick={onClick}/>
+      <Row board={board} index={3} onClick={onClick}/>
+    </Container>
+  );
+};
+
+export default Board;
