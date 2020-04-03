@@ -62,11 +62,52 @@ const STATUS_TEXT = Object.freeze({
 const initialState = {
   winner: null,
   turn: CHAR.circle,
-  processing: false,
+  processing: true,
   statusText: STATUS_TEXT.processing,
   handCount: 0,
   isCircleTurn: true,
   board: new Array(9),
+};
+
+const checkRow = (board, value, index) => {
+  let baseIndex = index - (index % 3);
+  for (let i = baseIndex; i < baseIndex + 3; i++) {
+    if (board[i] !== value) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const checkCol = (board, value, index) => {
+  let cursor = index;
+  for (let i = 0; i < 3; i++) {
+    if (board[cursor] !== value) {
+      return false;
+    }
+    cursor = (cursor + 3) % 9;
+  }
+  return true;
+};
+
+const checkDiagonal = (board, value, index) => {
+  if (![0, 2, 4, 6, 8].includes(index)) {
+    return false;
+  }
+  return (
+    [0, 4, 8].every(item => board[item] === value) ||
+    [2, 4, 6].every(item => board[item] === value)
+  );
+};
+
+const checkWinner = (board, value, index) => {
+  return [checkRow, checkCol, checkDiagonal].some(cb =>
+    cb(board, value, index),
+  );
+};
+
+const checkDraw = board => {
+  return board.every(item => item);
 };
 
 export default class App extends React.Component {
@@ -78,21 +119,38 @@ export default class App extends React.Component {
 
   onRestart = () => {
     this.setState({...initialState});
-  }
+  };
 
-  onClick = (index) => {
-    const { board, handCount, turn } = this.state
-    if (board[index]) {
-      return
+  onClick = index => {
+    const {board, handCount, processing, turn} = this.state;
+    if (board[index] || !processing) {
+      return;
     }
-    const newBoard = [...board]
-    newBoard[index] = turn
+    const newBoard = [...board];
+    newBoard[index] = turn;
     this.setState({
       board: newBoard,
       handCount,
-      turn: turn === CHAR.circle ? CHAR.crosse: CHAR.circle
-    })
-  }
+      turn: turn === CHAR.circle ? CHAR.crosse : CHAR.circle,
+    });
+
+    if (checkWinner(newBoard, turn, index)) {
+      this.setState({
+        processing: false,
+        winner: turn,
+        statusText: turn + ' ' + STATUS_TEXT.win,
+      });
+      return;
+    }
+
+    if (checkDraw(newBoard)) {
+      this.setState({
+        processing: false,
+        statusText: STATUS_TEXT.draw,
+      });
+      return;
+    }
+  };
 
   render() {
     const {turn, board, statusText} = this.state;
