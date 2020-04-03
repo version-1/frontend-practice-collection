@@ -7,8 +7,9 @@
 
 - HTML/CSS 課題
   - https://github.com/version-1/codepen-copy
-- JavaScript データ・アルゴリズム課題 ( 現状 001_syntaxの部分のみ完成。その他002の途中まで + 作成中)
+- JavaScript データ・アルゴリズム課題 
   - https://github.com/version-1/js-practice
+  - (現状 001_syntaxの部分のみ完成。その他002の途中まで + 作成中)
 - HTML/CSS + JS + 関数型プログラミング入門課題 (◯×ゲーム)
   - https://github.com/version-1/js-tic-tac-toe
 - React基礎課題 (◯×ゲーム)
