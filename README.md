@@ -15,7 +15,7 @@
 - React基礎課題 (◯×ゲーム)
   - https://github.com/version-1/react-tic-tac-toe
 - React+Redux+SPA課題 (Github Viewer途中まで)
-  - https://github.com/version-1/redux-github-viewer（作成中)
+  - https://github.com/version-1/redux-github-viewer
 - React+Redux+WebAPI 課題 (Github Viewer完成)
   - 作成中
 
