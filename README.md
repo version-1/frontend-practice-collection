@@ -17,10 +17,11 @@
 - React+Redux+SPA課題 (Github Viewer途中まで)
   - https://github.com/version-1/redux-github-viewer
 - React+Redux+WebAPI 課題 (Github Viewer完成)
-  - 作成中
+  - https://github.com/version-1/redux-saga-github-viewer/
 
 - Express (Web API CRUD 課題)
   - 作成中
+  
 - ポートフォリオ& 自作アプリ
 
 #### オプショナル
@@ -39,3 +40,4 @@
 - 2020/04/03(PST) React基礎課題を追加しました 
 - 2020/04/03(PST) 課題用リポジトリを用意しました
 - 2020/04/26(PST) React+Redux+SPA課題 (Github Viewer途中まで)を追加しました
+- 2020/05/09(PST) Redux+API課題 (Github Viewer API通信部分まで)を追加しました
