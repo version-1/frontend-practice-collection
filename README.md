@@ -28,8 +28,6 @@
   - 作成中
 - jest課題
   - 作成中
-- 総合課題(React+Redux+TypeScript+Express)
-  - 作成中
 - (bash)シェルスクリプト課題
   - 作成中
 
