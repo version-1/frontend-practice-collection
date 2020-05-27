@@ -5,20 +5,20 @@
 ## 課題 - 目次
 
 - 0100_HTML/CSS 課題
-  - https://github.com/version-1/ws-codepen-copy
+  - https://github.com/version-1/ws-0100-codepen-copy
 - 0200_JavaScript データ・アルゴリズム課題 
-  - https://github.com/version-1/ws-js-practice
+  - https://github.com/version-1/ws-0200-js-practice
   - (現状 001_syntaxの部分のみ完成。その他002の途中まで)
 - 0300_HTML/CSS + JS + 関数型プログラミング入門課題 (◯×ゲーム)
-  - https://github.com/version-1/ws-js-tic-tac-toe
+  - https://github.com/version-1/ws-0300-js-tic-tac-toe
 - 0400_React基礎課題 (◯×ゲーム)
-  - https://github.com/version-1/ws-react-tic-tac-toe
+  - https://github.com/version-1/ws-0400-react-tic-tac-toe
 - 0500_React+Redux+SPA課題 (Github Viewer途中まで)
-  - https://github.com/version-1/ws-redux-github-viewer
+  - https://github.com/version-1/ws-0500-redux-github-viewer
 - 0600_React+Redux+WebAPI 課題 (Github Viewer完成)
-  - https://github.com/version-1/ws-redux-saga-github-viewer/
+  - https://github.com/version-1/ws-0600-redux-saga-github-viewer/
 - 0700_Express (Web API CRUD 課題)
-  - https://github.com/version-1/ws-express-crud (作成中)
+  - https://github.com/version-1/ws-0700-express-crud (作成中)
   
 - ポートフォリオ& 自作アプリ
 
