@@ -18,7 +18,7 @@
 - 0600_React+Redux+WebAPI 課題 (Github Viewer完成)
   - https://github.com/version-1/ws-0600-redux-saga-github-viewer/
 - 0700_Express (Web API CRUD 課題)
-  - https://github.com/version-1/ws-0700-express-crud (作成中)
+  - https://github.com/version-1/ws-0700-express-crud
   
 - ポートフォリオ& 自作アプリ
 
@@ -26,6 +26,7 @@
 
 ## 変更履歴
 
+- 2020/06/07(PST) Express + WebAPI CRUD 用課題を作成しました。
 - 2020/05/26(PST) 各課題のリポジトリ名の変更に伴いリンクを修正しました。
 - 2020/05/09(PST) Redux+API課題 (Github Viewer API通信部分まで)を追加しました
 - 2020/05/09(PST) 各課題に通し番号を付与しました
