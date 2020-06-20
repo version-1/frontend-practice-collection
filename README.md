@@ -24,6 +24,8 @@
 
 #### チュートリアル
 
+- [MySQL初級チュートリアル](https://j-onodera26.gitbook.io/ws-mysql-tutorial/)
+
 ## 変更履歴
 
 - 2020/06/07(PST) Express + WebAPI CRUD 用課題を作成しました。
